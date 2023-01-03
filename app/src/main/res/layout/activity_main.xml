@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="2"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTextSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selectors"
+            android:textColor="@color/jd_red"
+            android:textSize="32dp"
+            android:textStyle="bold|italic"
+            android:textAlignment="center"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/buttonBgSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_bg_selector"
+            android:text="Colored Selector Enabled"
+            />
+
+        <Button
+            android:id="@+id/buttonBgSelectorDisabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg_selector_disabled"
+            android:enabled="false"
+            android:text="Color Selector Disabled"
+            />
+
+        <Button
+            android:id="@+id/buttonDrawableSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="16dp"
+            android:background="@drawable/btn_drawable_selector"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@color/green"
+            android:src="@drawable/btn_drawable_selector"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/buttonTxtSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Selector"
+            android:layout_margin="10dp"
+            android:textColor="@drawable/btn_text_selector"
+             />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewShapeSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shapes + Selector"
+            android:textSize="25dp"
+            android:textStyle="bold|italic"/>
+
+        <Button
+            android:id="@+id/buttonRoundShape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_shape_round"
+            android:text="ROUND SHAPE"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/buttonBgShape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape_gradient"
+            android:text="Shape with gradient"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/buttonSelectorShape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_selector_shape"
+            android:text="Selector Shape"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
